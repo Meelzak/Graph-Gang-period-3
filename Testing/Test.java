@@ -13,6 +13,7 @@ public class Test {
 
         Bk bk = new Bk();
         Powell powell = new Powell();
+        CircleDetector detector = new CircleDetector();
         NewForce newForce = new NewForce();
         Cleaner cleaner = new Cleaner();
         Graph g = reader.read(graphName);
@@ -43,6 +44,15 @@ public class Test {
             int low1 = bk.doBK(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println("   lower: " + low1);
+            
+            start1 = System.currentTimeMillis();
+            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
+            if (detector.detectCircle(g)) {
+            	System.out.println("   Chromatic Number: " + detector.getChromatic());
+            }
+            else {
+            	System.out.println("   No circle detected.");
+            }
 
             start1 = System.currentTimeMillis();
             int exact1 = newForce.doNewForce(g, up1, low1);
