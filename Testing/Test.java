@@ -14,6 +14,7 @@ public class Test {
         Bk bk = new Bk();
         Powell powell = new Powell();
         NewForce newForce = new NewForce();
+        BiPart bi = new BiPart();
         Cleaner cleaner = new Cleaner();
         Graph g = reader.read(graphName);
         CountDownLatch latch = new CountDownLatch(1);
@@ -29,11 +30,12 @@ public class Test {
         });
         t2.start();
         Thread t = new Thread(() -> {
-            long start1 = System.currentTimeMillis();
+            long start1=0;
+
+            start1 = System.currentTimeMillis();
             cleaner.cleanUp(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println(" For Cleaning");
-
             start1 = System.currentTimeMillis();
             int up1 = powell.doPowell(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
@@ -48,7 +50,12 @@ public class Test {
             int exact1 = newForce.doNewForce(g, up1, low1);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println("   exact: " + exact1);
-
+            /*
+            start1 = System.currentTimeMillis();
+            int groups = bi.doBi(g).size();
+            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
+            System.out.println("   groups: " + groups);
+            */
 
             System.out.println("-------------------");
             latch.countDown();

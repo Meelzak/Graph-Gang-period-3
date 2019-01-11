@@ -1,5 +1,6 @@
 package Testing;
 
+import Algorithms.BiPart;
 import Algorithms.Bk;
 import Algorithms.NewForce;
 import Algorithms.Powell;
@@ -14,14 +15,16 @@ public class newTest {
         Bk bk = new Bk();
         Powell powell = new Powell();
         NewForce newForce = new NewForce();
-        Cleaner cleaner = new Cleaner();
+
+        BiPart bi = new BiPart();
         Graph g = reader.read(graphName);
-        System.out.println(g.getVertices());
+
+        System.out.println("Groups: "+bi.doBi(g).size());
         //g.print();
-        cleaner.cleanUp(g);
+        //cleaner.cleanUp(g);
         //g.print();
-        System.out.println("Vertices: "+g.getVertices());
-        System.out.println("Up: "+powell.doPowell(g));
-        System.out.println("Low: "+bk.doBK(g));
+       // System.out.println("Vertices: "+g.getVertices());
+        //System.out.println("Up: "+powell.doPowell(g));
+        //System.out.println("Low: "+bk.doBK(g));
     }
 }

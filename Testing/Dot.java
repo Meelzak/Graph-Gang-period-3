@@ -13,6 +13,7 @@ public class Dot{
     private ArrayList<Dot> list;
     //create instance variables you need
     private int content=0;
+    private int group=-1;
     //firstly, the constructor:
     public Dot(){
         //A class representing a single vertice of a graph
@@ -33,5 +34,11 @@ public class Dot{
         for(int i=0;i<list.size();i++){
             list.get(i).giveList().remove(this);
         }
+    }
+    public void setGroup(int group){
+        this.group=group;
+    }
+    public int getGroup(){
+        return group;
     }
 }
