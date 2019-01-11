@@ -13,7 +13,9 @@ public class Test {
 
         Bk bk = new Bk();
         Powell powell = new Powell();
-        CircleDetector detector = new CircleDetector();
+        MC MC = new MC();
+        MC0 MC0 = new MC0();
+        //CircleDetector detector = new CircleDetector();
         NewForce newForce = new NewForce();
         BiPart bi = new BiPart();
         Cleaner cleaner = new Cleaner();
@@ -46,15 +48,25 @@ public class Test {
             int low1 = bk.doBK(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println("   lower: " + low1);
-            
+
             start1 = System.currentTimeMillis();
+            int low2 = MC.search(g);
+            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
+            System.out.println("lower MC: " + low2);
+
+            start1 = System.currentTimeMillis();
+            int low3 = MC0.search(g);
+            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
+            System.out.println("lower MC0: " + low3);
+            
+            /*start1 = System.currentTimeMillis();
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             if (detector.detectCircle(g)) {
             	System.out.println("   Chromatic Number: " + detector.getChromatic());
             }
             else {
             	System.out.println("   No circle detected.");
-            }
+            }*/
 
             start1 = System.currentTimeMillis();
             int exact1 = newForce.doNewForce(g, up1, low1);
