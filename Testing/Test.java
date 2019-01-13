@@ -16,6 +16,7 @@ public class Test {
         MC MC = new MC();
         MC0 MC0 = new MC0();
         //CircleDetector detector = new CircleDetector();
+        //WheelDetector detectorTwo = new WheelDetector();
         NewForce newForce = new NewForce();
         BiPart bi = new BiPart();
         Cleaner cleaner = new Cleaner();
@@ -67,6 +68,17 @@ public class Test {
             else {
             	System.out.println("   No circle detected.");
             }*/
+            
+            /*
+            start1 = System.currentTimeMillis();
+            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
+            if (detectorTwo.detectWheel(g)) {
+            	System.out.println("   Chromatic Number: " + detectorTwo.getChromatic());
+            }
+            else {
+            	System.out.println("   No wheel detected.");
+            }
+            */
 
             start1 = System.currentTimeMillis();
             int exact1 = newForce.doNewForce(g, up1, low1);
