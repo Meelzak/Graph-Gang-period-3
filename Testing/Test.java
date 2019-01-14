@@ -57,7 +57,7 @@ public class Test {
             boolean connect2 = connected.isConnected(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println(" Is Connected: "+connect2);
-            /*
+
             start1 = System.currentTimeMillis();
             int up1 = powell.doPowell(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
@@ -73,7 +73,7 @@ public class Test {
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println("   lower MC: " + low2);
             */
-            /*
+            
             start1 = System.currentTimeMillis();
             int low3 = MC0.search(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
