@@ -15,6 +15,7 @@ public class Dot{
     private int content=0;
     private int group=-1;
     public boolean isConnected=false;
+    private int numberOfColouredConnections=0;
     //firstly, the constructor:
     public Dot(){
         //A class representing a single vertice of a graph
