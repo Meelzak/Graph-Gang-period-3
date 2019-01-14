@@ -15,9 +15,9 @@ import Testing.*;
  */
 
 /*BUT:
- * -it gets a stackoverflow error on line 103
  * -for some reason it always returns a 2 as an answer when you run it from every single vertex
- * -it gives numbers under the lower bound
+ * -it gives numbers under the lower bound (like the two)
+ *- so there should be a logic error somewhere but I can't find it
  */
 
 
