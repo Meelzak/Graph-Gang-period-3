@@ -1,25 +1,29 @@
 package Testing;
 
-import Algorithms.BiPart;
-import Algorithms.Bk;
-import Algorithms.NewForce;
-import Algorithms.Powell;
+import Algorithms.*;
 
 public class newTest {
     public static void main(String[] args){
-        String graphName="gTest.txt";
+        String graphName="g18.txt";
         System.out.println("-------------------");
         System.out.println(graphName);
         Reader reader = new Reader(Parameters.path);
+        Graph g = reader.read(graphName);
 
+        IsConnected isConnected = new IsConnected();
         Bk bk = new Bk();
         Powell powell = new Powell();
         NewForce newForce = new NewForce();
-
         BiPart bi = new BiPart();
-        Graph g = reader.read(graphName);
+        Brook brook = new Brook();
 
-        System.out.println("Groups: "+bi.doBi(g).size());
+        boolean b=isConnected.isConnected(g);
+        System.out.println("Connected: "+b);
+        if(b==true){
+            System.out.println("Brook: "+brook.doBrook(g));
+        }
+
+        //System.out.println("Groups: "+bi.doBi(g).size());
         //g.print();
         //cleaner.cleanUp(g);
         //g.print();

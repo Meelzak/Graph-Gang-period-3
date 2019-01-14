@@ -1,6 +1,10 @@
 package Algorithms;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.LinkedList;
+
 import Testing.*;
 public class NewForce{
 
@@ -18,10 +22,19 @@ public class NewForce{
             return lowerBound;
         }
         upperBound--;
+        ArrayList<Dot> list = graph.getList();
+        LinkedList<Dot> test = new LinkedList<>(list);
+        Collections.sort(test, new Comparator<Dot>() {
+            @Override
+            public int compare(Dot o1, Dot o2) {
+                return -Integer.compare(o1.giveList().size(),o2.giveList().size());
+            }
+        });
         //dF is the boolean function which checks whether two adjacent vertices are same color or no
-        while(dF(graph.getList(), upperBound, 0)){
+        while(dF(list, upperBound, 0)){
+            System.out.println("Test: uppperBound works: "+upperBound);
             upperBound--;
-            gReset(graph.getList());
+            gReset(list);
         }
         doIt(graph,0,upperBound+1);
 

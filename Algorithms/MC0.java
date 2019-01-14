@@ -9,13 +9,24 @@ public class MC0{
 
     ArrayList<Dot> list;
     int maxSize;
-
+    ArrayList<ArrayList<Dot>> maxList;
+    public MC0(){
+        maxList = new ArrayList<>();
+    }
     public int search(Graph g){
         list =(ArrayList)g.getList().clone();
         ArrayList<Dot> C = new ArrayList<>();
         expand(C,list);
         gReset(list);
         return maxSize;
+    }
+    public ArrayList<ArrayList<Dot>> searchList(Graph g){
+        list =(ArrayList)g.getList().clone();
+        ArrayList<Dot> C = new ArrayList<>();
+        int i=0;
+        expand(C,list);
+        gReset(list);
+        return maxList;
 
     }
 
@@ -34,7 +45,7 @@ public class MC0{
                 }
             }
             if (newList.isEmpty()&&C.size()>maxSize){
-                saveSolution(C);
+                saveSolution2(C);
             }
             if(!newList.isEmpty()){
                 expand(C,newList);
@@ -47,6 +58,12 @@ public class MC0{
     public void saveSolution(ArrayList<Dot> C){
         maxSize = C.size();
     }
+
+    public void saveSolution2(ArrayList<Dot> C){
+        maxList.add((ArrayList<Dot>)C.clone());
+        maxSize = C.size();
+    }
+
 
     //set the content of every entry (a Dot) of the ArrayList to zero
     public void gReset(ArrayList<Dot> list){

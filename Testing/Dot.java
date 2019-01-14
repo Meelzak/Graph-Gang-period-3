@@ -14,6 +14,7 @@ public class Dot{
     //create instance variables you need
     private int content=0;
     private int group=-1;
+    public boolean isConnected=false;
     //firstly, the constructor:
     public Dot(){
         //A class representing a single vertice of a graph

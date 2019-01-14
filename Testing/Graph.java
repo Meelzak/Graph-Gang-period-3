@@ -8,6 +8,8 @@ package Testing;
  * Author:
  * Cavid Karca
  */
+import Algorithms.Powell;
+
 import java.util.ArrayList;
 public class Graph{
     //saves all the parameters of the graph
@@ -22,6 +24,7 @@ public class Graph{
         this.edges=edges;
         this.vertices=vertices;
         this.list=(ArrayList)list.clone();
+        Powell.qSort(list);
     }
     //Setters and Getters
     //If lowerBound/upperBound/cNumber == -1 it follows Graph was not calculated
