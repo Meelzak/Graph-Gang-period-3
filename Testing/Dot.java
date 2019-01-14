@@ -48,6 +48,6 @@ public class Dot{
     }
 
     public int getColouredConnections() {
-    	return numberOfColouredConnections++;
+    	return numberOfColouredConnections;
     }
 }
