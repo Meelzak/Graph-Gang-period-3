@@ -12,6 +12,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Reader{
     private final String path;
@@ -43,8 +44,9 @@ public class Reader{
                 System.out.println("File not Redable");
                 return null;
             }
+
             //create an DotList
-            ArrayList<Dot> list = new ArrayList<Dot>();
+            LinkedList<Dot> list = new LinkedList<>();
             for(int i=0;i<vertices;i++){
                 list.add(new Dot());
             }

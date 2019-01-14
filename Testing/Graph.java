@@ -11,6 +11,8 @@ package Testing;
 import Algorithms.Powell;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class Graph{
     //saves all the parameters of the graph
     private int edges;
@@ -19,19 +21,18 @@ public class Graph{
     private int lowerBound=-1;
     private int cNumber=-1;
     private int hints=0;
-    private ArrayList<Dot> list;
-    public Graph(int vertices,int edges,ArrayList list){
+    private LinkedList<Dot> list;
+    public Graph(int vertices,int edges,LinkedList<Dot> list){
         this.edges=edges;
         this.vertices=vertices;
-        this.list=(ArrayList)list.clone();
-        Powell.qSort(list);
+        this.list=list;
     }
     //Setters and Getters
     //If lowerBound/upperBound/cNumber == -1 it follows Graph was not calculated
     public int getEdges() {
         return edges;
     }
-    public ArrayList getList() {
+    public LinkedList<Dot> getList() {
         return list;
     }
     public int getVertices() {
@@ -59,13 +60,5 @@ public class Graph{
     }
     public int getCNumber(){
         return cNumber;
-    }
-    public void print(){
-        System.out.println("VERTICES = "+vertices);
-        System.out.println("EDGES = "+edges);
-        for (int i=0;i<list.size();i++){
-            ArrayList<Dot> l = list.get(i).giveList();
-            System.out.println("con: "+l.size());
-        }
     }
 }

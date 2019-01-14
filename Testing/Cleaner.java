@@ -1,6 +1,6 @@
 package Testing;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Cleaner {
     public void cleanUp(Graph graph) {
@@ -14,7 +14,7 @@ public class Cleaner {
         }
         boolean cleaned = false;
         int counter = 0;
-        ArrayList<Dot> list = graph.getList();
+        LinkedList<Dot> list = graph.getList();
         while (!cleaned) {
             cleaned = true;
             for (int i = 0; i < list.size(); i++) {
