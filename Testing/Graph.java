@@ -8,9 +8,10 @@ package Testing;
  * Author:
  * Cavid Karca
  */
-import Algorithms.Powell;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 
 public class Graph{
@@ -20,7 +21,6 @@ public class Graph{
     private int upperBound=-1;
     private int lowerBound=-1;
     private int cNumber=-1;
-    private int hints=0;
     private LinkedList<Dot> list;
     public Graph(int vertices,int edges,LinkedList<Dot> list){
         this.edges=edges;
@@ -33,7 +33,7 @@ public class Graph{
         return edges;
     }
     public LinkedList<Dot> getList() {
-        return list;
+        return new LinkedList((LinkedList<Dot>)list.clone());
     }
     public int getVertices() {
         return vertices;
@@ -61,4 +61,14 @@ public class Graph{
     public int getCNumber(){
         return cNumber;
     }
+
+    public void sort(){
+        Collections.sort(list, (o1, o2) -> -Integer.compare(o1.giveList().size(),o2.giveList().size()));
+    }
+    public void gReset(){
+        for(int i=0;i<list.size();i++){
+            list.get(i).setContent(0);
+        }
+    }
+
 }

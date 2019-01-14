@@ -5,23 +5,23 @@ package Algorithms;
 * The size of our biggest clique is the lower bound, and the biggest clique is one of our hints.	
 */
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import Testing.*;
 public class Bk{
 
     public int doBK(Graph g){
-        ArrayList<Dot> list = (ArrayList)g.getList().clone();
-        int r = doTheBK(new ArrayList<Dot>(), list, new ArrayList<Dot>());
-        gReset(list);
+        LinkedList<Dot> list = g.getList();
+        int r = doTheBK(new LinkedList<Dot>(), list, new LinkedList<Dot>());
+        g.gReset();
         return r;
     }
 
     /* This method will perform the BK, so it will return the maximum number of connected Dots
      * How it works: 
-     * There are three ArrayLists, which will be used again and again, until two of them are totally empty.
+     * There are three LinkedLists, which will be used again and again, until two of them are totally empty.
      * It checks whether vertices are connected, and what the maximum number of fully connected vertices (so they all connect to each other) is.
      */
-    public int doTheBK(ArrayList<Dot> r,ArrayList<Dot> p,ArrayList<Dot> x){
+    public int doTheBK(LinkedList<Dot> r,LinkedList<Dot> p,LinkedList<Dot> x){
         int max =0;
         if(p.isEmpty() && x.isEmpty()){//if these two are empty, then check if r is bigger than the maximum
             max =Math.max(max, r.size());
@@ -30,11 +30,11 @@ public class Bk{
         for(int i=0;i<p.size();i++){
             Dot dot = p.get(i);
 
-            ArrayList<Dot> a = (ArrayList <Dot> )r.clone();
+            LinkedList<Dot> a = (LinkedList <Dot> )r.clone();
             a.add(dot);
-            ArrayList<Dot> b = (ArrayList <Dot> )p.clone();
+            LinkedList<Dot> b = (LinkedList <Dot> )p.clone();
             b.retainAll(dot.giveList());
-            ArrayList<Dot> c = (ArrayList <Dot> )x.clone();
+            LinkedList<Dot> c = (LinkedList <Dot> )x.clone();
             c.retainAll(dot.giveList());
             max = Math.max(doTheBK(a, b, c),max);//will use the doTheBK method again
 
@@ -42,11 +42,5 @@ public class Bk{
             x.add(dot);
         }
         return max; //eventually return the maximum number of fully connected vertices
-    }
-    //set the content of every entry (a Dot) of the ArrayList to zero
-    public void gReset(ArrayList<Dot> list){
-        for(int i=0;i<list.size();i++){
-            list.get(i).setContent(0);
-        }
     }
 }   

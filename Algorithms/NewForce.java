@@ -1,6 +1,6 @@
 package Algorithms;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
@@ -9,11 +9,6 @@ import Testing.*;
 public class NewForce{
 
     public int chromaticNumber;
-
-    //Empty constructor
-    public NewForce() {
-    }
-
     //Returns the chromatic number
     //Gets called in chromatic manager
     //Returns lowerbound if lowerbound == upperbound
@@ -22,26 +17,21 @@ public class NewForce{
             return lowerBound;
         }
         upperBound--;
-        ArrayList<Dot> list = graph.getList();
-        LinkedList<Dot> test = new LinkedList<>(list);
-        Collections.sort(test, new Comparator<Dot>() {
-            @Override
-            public int compare(Dot o1, Dot o2) {
-                return -Integer.compare(o1.giveList().size(),o2.giveList().size());
-            }
-        });
+        LinkedList<Dot> list = graph.getList();
         //dF is the boolean function which checks whether two adjacent vertices are same color or no
         while(dF(list, upperBound, 0)){
-            System.out.println("Test: uppperBound works: "+upperBound);
+            System.out.println("Upperbound "+upperBound+ " Works");
+            if(upperBound==lowerBound){
+                upperBound--;
+                break;
+            }
             upperBound--;
-            gReset(list);
+            graph.gReset();
         }
-        doIt(graph,0,upperBound+1);
-
         return upperBound+1;
         }
 
-    public boolean dF(ArrayList<Dot> list,int color,int dotPosition){
+    public boolean dF(LinkedList<Dot> list,int color,int dotPosition){
         boolean allColored=true;
         for(int i=0;i<list.size();i++){ //Add a size and getSize to graph too.
             if(list.get(i).giveContent()==0){
@@ -66,27 +56,12 @@ public class NewForce{
         return false;
     }
     //Check is the chromatic number is true or not
-    public boolean cNumberTrue(ArrayList<Dot> list,int color){
+    public boolean cNumberTrue(LinkedList<Dot> list,int color){
         for(int i=0;i<list.size();i++){
             if(list.get(i).giveContent()==color){
                 return false;
             }
         }
         return true;
-    }
-    //clear the values for next dot
-    public void gReset(ArrayList<Dot> list){
-        for(int i=0;i<list.size();i++){
-            list.get(i).setContent(0);
-        }
-    }
-
-    //Manually set the chromatic number
-    public void doIt(Graph graph,int startDot,int smallesChrom){
-        this.chromaticNumber = smallesChrom;
-    }
-    //chromatic number getter
-    public int getChromaticNumber() {
-        return chromaticNumber;
     }
 }

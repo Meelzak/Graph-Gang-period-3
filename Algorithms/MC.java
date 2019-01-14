@@ -4,56 +4,47 @@ package Algorithms;
 import Testing.Dot;
 import Testing.Graph;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 public class MC{
 
-    ArrayList<Dot> list;
+    LinkedList<Dot> list;
     int n;
     int maxSize = 0;
 
     public int search(Graph g){
-        list =(ArrayList)g.getList().clone();
+        list = g.getList();
         n = list.size();
-        ArrayList<Dot> C = new ArrayList<>();
+        LinkedList<Dot> C = new LinkedList<>();
         expand(C,list);
-        gReset(list);
+        g.gReset();
         return maxSize;
 
     }
 
-    public void expand(ArrayList<Dot> C, ArrayList<Dot> list){
+    public void expand(LinkedList<Dot> C, LinkedList<Dot> list){
         for (int i=list.size()-1;i>=0;i--){
             if (C.size()+list.size()<=maxSize) {
                 return;
             }
             Dot v = list.get(i);
             C.add(v);
-            ArrayList<Dot> newList = new ArrayList<>();
+            LinkedList<Dot> newList = new LinkedList<>();
             for (Dot w : list){
                 if (v.giveList().contains(w)){
                     newList.add(w);
                 }
             }
             if (newList.isEmpty()&&C.size()>maxSize){
-                saveSolution(C);
+                maxSize = C.size();
             }
             if(!newList.isEmpty()){
                 expand(C,newList);
             }
-            C.remove((Dot)v);
-            list.remove((Dot)v);
+            C.remove(v);
+            list.remove(v);
         }
 
     }
-    public void saveSolution(ArrayList<Dot> C){
-        maxSize = C.size();
-    }
 
-    //set the content of every entry (a Dot) of the ArrayList to zero
-    public void gReset(ArrayList<Dot> list){
-        for(int i=0;i<list.size();i++){
-            list.get(i).setContent(0);
-        }
-    }
 }
 

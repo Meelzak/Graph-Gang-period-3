@@ -1,10 +1,11 @@
 package Testing;
-import Algorithms.*;
 
 import java.util.ArrayList;
 import java.util.concurrent.*;
+import Algorithms.*;
 
 public class Test {
+
     public void testing(String graphName) {
 
 
@@ -22,6 +23,8 @@ public class Test {
         BiPart bi = new BiPart();
         IsConnected connected = new IsConnected();
         Cleaner cleaner = new Cleaner();
+
+
         Graph g = reader.read(graphName);
         double density = ((double)g.getEdges()*2)/(g.getVertices()-1)/g.getVertices()*100;
         System.out.println("Density: "+density+" percent");
@@ -40,13 +43,12 @@ public class Test {
         t2.start();
         Thread t = new Thread(() -> {
             long start1=0;
-        /*
+
             start1 = System.currentTimeMillis();
             boolean connect = connected.isConnected(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println(" Is Connected: "+connect);
 
-        */
 
             start1 = System.currentTimeMillis();
             cleaner.cleanUp(g);
@@ -54,15 +56,10 @@ public class Test {
             System.out.println(" For Cleaning");
 
             start1 = System.currentTimeMillis();
-            boolean connect2 = connected.isConnected(g);
-            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
-            System.out.println(" Is Connected: "+connect2);
-
-            start1 = System.currentTimeMillis();
             int up1 = powell.doPowell(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println("   upper: " + up1);
-            /*
+
             start1 = System.currentTimeMillis();
             int low1 = bk.doBK(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
@@ -72,21 +69,18 @@ public class Test {
             int low2 = MC.search(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println("   lower MC: " + low2);
-            */
-            
+
             start1 = System.currentTimeMillis();
             int low3 = MC0.search(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println("   lower MC0: " + low3);
-            /*
-                        ArrayList<ArrayList<Dot>> biggest = MC0.searchList(g);
 
             start1 = System.currentTimeMillis();
-            int up2 = powell.doPowellTest(g,biggest);
+            int exact1 = newForce.doNewForce(g, up1, low3);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
-            System.out.println("   upper2: " + up2);
-               */
-            /*start1 = System.currentTimeMillis();
+            System.out.println("   exact: " + exact1);
+            /*
+            start1 = System.currentTimeMillis();
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             if (detector.detectCircle(g)) {
             	System.out.println("   Chromatic Number: " + detector.getChromatic());
@@ -105,11 +99,6 @@ public class Test {
             	System.out.println("   No wheel detected.");
             }
             */
-
-            start1 = System.currentTimeMillis();
-            int exact1 = newForce.doNewForce(g, up1, low3);
-            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
-            System.out.println("   exact: " + exact1);
             /*
             start1 = System.currentTimeMillis();
             int groups = bi.doBi(g).size();
