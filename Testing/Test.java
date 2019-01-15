@@ -20,6 +20,7 @@ public class Test {
         //CircleDetector detector = new CircleDetector();
         //WheelDetector detectorTwo = new WheelDetector();
         NewForce newForce = new NewForce();
+        NewGreedy greedy = new NewGreedy();
         BiPart bi = new BiPart();
         IsConnected connected = new IsConnected();
         Cleaner cleaner = new Cleaner();
@@ -68,6 +69,17 @@ public class Test {
             int up1 = powell.doPowell(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println("   upper: " + up1);
+            
+            start1 = System.currentTimeMillis();
+            int up2 = g.getVertices();
+            for (int i = 0; i < g.getVertices(); i++) {
+            	greedy.doGreedy(i, g);
+            	int current = greedy.getUpper();
+            	up2 = Math.min(up2, current);
+            	
+            }
+            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
+            System.out.println("   upper greedy: " + up2);
 
             start1 = System.currentTimeMillis();
             int low1 = bk.doBK(g);
