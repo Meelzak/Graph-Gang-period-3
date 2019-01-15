@@ -23,6 +23,7 @@ public class Test {
         BiPart bi = new BiPart();
         IsConnected connected = new IsConnected();
         Cleaner cleaner = new Cleaner();
+        CleanerAndDevider cleanerAndDevider = new CleanerAndDevider();
 
 
         Graph g = reader.read(graphName);
@@ -43,7 +44,15 @@ public class Test {
         t2.start();
         Thread t = new Thread(() -> {
             long start1=0;
+            start1 = System.currentTimeMillis();
+            cleanerAndDevider.cleanAndDivide(g);
+            System.out.println(graphName+"  "+"CleaningAndDeviding Time: " + (System.currentTimeMillis() - start1));
 
+            start1 = System.currentTimeMillis();
+            int exact = g.giveCN();
+            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
+            System.out.println("   CN: " + exact);
+    /*
             start1 = System.currentTimeMillis();
             boolean connect = connected.isConnected(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));

@@ -1,17 +1,23 @@
 package Testing;
 
 
+import Algorithms.CleanerAndDevider;
+import Algorithms.Divider;
+
+import java.util.LinkedList;
+
 public class newTest {
     public static void main(String[] args){
-        String graphName="g18.txt";
+        String graphName="gTest.txt";
         System.out.println("-------------------");
         System.out.println(graphName);
         Reader reader = new Reader(Parameters.path);
         Graph g = reader.read(graphName);
 
         g.sort();
-
-        System.out.println("dad");
+        CleanerAndDevider cleanerAndDevider = new CleanerAndDevider();
+        cleanerAndDevider.cleanAndDivide(g);
+        System.out.println("UFF: "+g.giveCN());
         //System.out.println("Groups: "+bi.doBi(g).size());
         //g.print();
         //cleaner.cleanUp(g);

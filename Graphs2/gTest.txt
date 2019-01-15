@@ -1,7 +1,6 @@
-VERTICES = 4
+VERTICES = 3
 EDGES = 3
+1 2
 1 3
-2 4
-3 4
 2 3 
 

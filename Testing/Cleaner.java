@@ -3,12 +3,9 @@ package Testing;
 import java.util.LinkedList;
 
 public class Cleaner {
-    public void cleanUp(Graph graph) {
+    public boolean cleanUp(Graph graph) {
         int min = 0;
         int startVertices = graph.getVertices();
-        if (graph.getVertices() >= 2 && graph.getEdges() >= 1) {
-            min = 2;
-        }
         if (graph.getEdges() == 0) {
             min = 1;
         }
@@ -32,26 +29,42 @@ public class Cleaner {
                     cleaned = false;
                     counter++;
                 }
-            }
-        }
-            double percent = ((double)counter/(double)startVertices)*100;
-            System.out.println("Removed Vertices: " + counter + " || "+percent+ " percent");
-            if (graph.getVertices() <= 0) {
-                if (min == 1) {
-                    graph.getList().add(new Dot());
-                    graph.setVerticesPlus();
-                }
-                if (min == 2) {
-                    Dot d1 = new Dot();
-                    Dot d2 = new Dot();
-                    d1.setConnection(d2);
-                    d2.setConnection(d1);
-                    graph.getList().add(d1);
-                    graph.getList().add(d2);
-                    graph.setVerticesPlus();
-                    graph.setVerticesPlus();
-                    graph.setEdgesPlus();
+                else if(d.giveList().size()==graph.getVertices()-1){
+                    int minus = d.giveList().size();
+                    d.killMe();
+                    list.remove(i);
+                    graph.setVerticesMinus();
+                    graph.setEdgesMinus(minus);
+                    cleaned = false;
+                    System.out.println("Removed full Connected");
+                    graph.addAddToChrom();
+                    counter++;
+                    //dem Graph das Sagen
                 }
             }
         }
+        double percent = ((double)counter/(double)startVertices)*100;
+        System.out.println("Removed Vertices: " + counter + " || "+percent+ " percent");
+        if (graph.getVertices() <= 0) {
+            if (min == 1) {
+                graph.getList().add(new Dot());
+                graph.setVerticesPlus();
+            }
+            if (min == 0) {
+                System.out.println("doda");
+                Dot d1 = new Dot();
+                Dot d2 = new Dot();
+                d1.setConnection(d2);
+                d2.setConnection(d1);
+                list.add(d1);
+                list.add(d2);
+                graph.setVerticesPlus();
+                graph.setVerticesPlus();
+                graph.setEdgesPlus();
+            }
+        }
+        graph.setList(list);
+        return counter>0;
+
     }
+}
