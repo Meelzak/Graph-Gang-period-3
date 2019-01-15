@@ -46,11 +46,13 @@ public class Dot{
         return group;
     }
     
-    //in case the new greedy algorithm ever starts to work (can be deleted later if it doesn't):
     public void addColouredConnections() {
     	numberOfColouredConnections++;
     }
     public int getColouredConnections() {
     	return numberOfColouredConnections;
+    }
+    public void resetColouredConnections() {
+    	numberOfColouredConnections = 0;
     }
 }
