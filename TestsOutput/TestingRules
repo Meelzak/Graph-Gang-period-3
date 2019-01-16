@@ -4,4 +4,17 @@ What we want to test:
 - with and without cleaner and divider
 - what the influence of sorting is on the algorithms
 - different ordering of vertices, how this affects the algorithms
-- 
+- difference that nr of vertices & edges make
+- density of graphs
+- special structure algorithms vs no special structure algorithms
+----- more if you think of new ones -----
+
+Rules for testing:
+- if you use cleaner and divider / cleaner, you can't use the algorithms anymore, but you can use the upper and lower bound stuff
+- ALWAYS write down if you use the cleaner and divider AND what kind of computer you use
+- do not run multiple graphs at the same time
+- run it for a fixed amount of time -> 10 minutes, then kill it
+
+Need to research
+-regular graphs
+-planar graphs
