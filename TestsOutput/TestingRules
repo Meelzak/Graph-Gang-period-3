@@ -1,13 +1,7 @@
-What we need to test:
--
--
--
--
--
-
-
-
-
-
-
-
+What we want to test:
+- difference between the three lower bound algorithms
+- difference between the upper bound algorithms
+- with and without cleaner and divider
+- what the influence of sorting is on the algorithms
+- different ordering of vertices, how this affects the algorithms
+- 
