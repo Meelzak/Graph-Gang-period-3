@@ -11,7 +11,8 @@ public class myTester {
     public static void main(String[] args){
 
 
-        String graphName="g3.txt";
+        String graphName="g5" +
+                ".txt";
         System.out.println(graphName);
         Reader reader = new Reader(Parameters.path);
         Graph g = reader.read(graphName);
