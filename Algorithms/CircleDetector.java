@@ -1,6 +1,6 @@
 package Algorithms;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 import Testing.*;
 
@@ -10,7 +10,7 @@ public class CircleDetector {
 	
 	public boolean detectCircle(Graph g) {
 		//has to check every single vertex to see if it has two edges
-		LinkedList<Dot> dotList = g.getList();
+		ArrayList<Dot> dotList = g.getList();
 		for (int i = 0; i < g.getList().size(); i++) {
 			if (dotList.get(i).giveList().size() == 2) {
 				circle = true;

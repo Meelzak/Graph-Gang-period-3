@@ -3,11 +3,11 @@ package Algorithms;
 import Testing.Dot;
 import Testing.Graph;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class IsConnected {
     public boolean isConnected(Graph g){
-        LinkedList<Dot> list  = g.getList();
+        ArrayList<Dot> list  = g.getList();
        /* int v = g.getVertices()-1;
         for(int i=0;i<list.size();i++){
             Dot dot = list.get(i);
@@ -34,7 +34,7 @@ public class IsConnected {
             return;
         }
         d.isConnected=true;
-        LinkedList<Dot> l = d.giveList();
+        ArrayList<Dot> l = d.giveList();
         for(int i=0;i<l.size();i++){
             test(l.get(i));
         }

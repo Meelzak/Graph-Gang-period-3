@@ -1,6 +1,6 @@
 package Algorithms;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 import Testing.*;
 
@@ -11,7 +11,7 @@ public class WheelDetector {
 	
 	public boolean detectWheel(Graph g) {
 		//has to check every single vertex to see if it has two edges or is the central point
-		LinkedList<Dot> dotList = (LinkedList<Dot>) g.getList().clone();
+		ArrayList<Dot> dotList = (ArrayList<Dot>) g.getList().clone();
 		for (int i = 0; i < g.getList().size(); i++) {
 			if (dotList.get(i).giveList().size() == 2 || (dotList.get(i).giveList().size() == (g.getList().size() -1) && connect == 0 )) {
 				wheel = true;

@@ -9,7 +9,7 @@ package Algorithms;
  * Cavid Karca
  */
 import java.util.Random;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -44,13 +44,13 @@ public class Generator{
     }
     public void GenerateGraph(int vertices,int edges,String filename){
         //Generates Graph and saves it as file
-        LinkedList list = Generate(vertices,edges);
+        ArrayList list = Generate(vertices,edges);
         System.out.println(filename +" created, vertices: "+vertices+" edges: "+list.size());
         fileomat(filename, vertices, list);
     } 
     public Graph GenerateGraph(int vertices,int edges){
-        LinkedList list1 = Generate(vertices, edges);
-        LinkedList<Dot> list = new LinkedList<Dot>();
+        ArrayList list1 = Generate(vertices, edges);
+        ArrayList<Dot> list = new ArrayList<Dot>();
         for(int i=0;i<vertices;i++){
             list.add(new Dot());
         }
@@ -64,17 +64,17 @@ public class Generator{
         Graph graph = new Graph(vertices, edges, list);
        return graph;
     } 
-    private LinkedList Generate(int vertices,int edges){
+    private ArrayList Generate(int vertices,int edges){
         //Returns a List with the connections of a random-graph in it
         //The graph has transfered number of vertices and edges,if edges<0 a random number of edges 
         //between 0 and the maximal possible number of edges will be used, if edges>= maximal number of edges
         // max number of edges will be used
         System.out.println(vertices+" b "+edges);
-        LinkedList list = doList2(vertices);
+        ArrayList list = doList2(vertices);
         if(edges>=list.size()){
             return list;
         }
-        LinkedList newList = new LinkedList();
+        ArrayList newList = new ArrayList();
         Random rand = new Random();
         int i=0;
         int r=edges;
@@ -91,9 +91,9 @@ public class Generator{
         }
         return newList;
     }
-    private LinkedList doList2(int vertices){
+    private ArrayList doList2(int vertices){
         //Returns a List with all connections between the transfered number of vertices 
-        LinkedList list = new LinkedList();
+        ArrayList list = new ArrayList();
         for(int i=1;i<vertices;i++){
             int x=i+1;
             while (x<=vertices) {
@@ -104,9 +104,9 @@ public class Generator{
         }
         return list;
     }
-    private void fileomat(String fileName,int vertices,LinkedList list){
+    private void fileomat(String fileName,int vertices,ArrayList list){
         //needs a String as the name of the Graphfile, the number of vertices and 
-        //and writes a graph, transfered as a LinkedList into a .txt
+        //and writes a graph, transfered as a ArrayList into a .txt
         try{
             FileWriter f = new FileWriter(fileName);
             BufferedWriter writer = new BufferedWriter(f);

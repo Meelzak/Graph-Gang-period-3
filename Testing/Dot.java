@@ -2,16 +2,16 @@ package Testing;
 
 /*
  * Short summary:
- * A dot represents a vertix, and contains an ArrayList with Dots in it. 
+ * A dot represents a vertix, and contains an ArrayList with Dots in it.
  * The Dots in this ArrayList are the vertices this particular vertix is connected to.
  * The vertices can also be filled (in this case with other pictures), when a hint is given.
  */
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Dot{
     
     //there need to be two lists, one for the connections, on for the unavailable colours
-    private LinkedList<Dot> list;
+    private ArrayList<Dot> list;
     //create instance variables you need
     private int content=0;
     private int group=-1;
@@ -20,7 +20,7 @@ public class Dot{
     //firstly, the constructor:
     public Dot(){
         //A class representing a single vertice of a graph
-        list = new LinkedList<>();
+        list = new ArrayList<>();
     }
     public void setConnection(Dot dot){//you can add another dot to the ArrayList inside your Dot, so you know these are connected
         list.add(dot);
@@ -30,7 +30,7 @@ public class Dot{
     }
     public int giveContent(){ return content; }//returns the content of the vertix
     
-    public LinkedList<Dot> giveList(){//returns the list of the connections
+    public ArrayList<Dot> giveList(){//returns the list of the connections
         return list;
     }
 

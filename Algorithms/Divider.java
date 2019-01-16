@@ -4,16 +4,16 @@ import Testing.Dot;
 import Testing.Graph;
 import sun.awt.image.ImageWatched;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Divider {
     public boolean divide(Graph g){
-        LinkedList<Dot> oldList = g.getList();
+        ArrayList<Dot> oldList = g.getList();
         if(oldList.isEmpty()){
             return false;
         }
         while (!oldList.isEmpty()){
-            LinkedList<Dot> newSubList = new LinkedList<>();
+            ArrayList<Dot> newSubList = new ArrayList<>();
             test(oldList.get(0),oldList,newSubList);
 
             if(newSubList.size()==g.getVertices()){
@@ -30,20 +30,20 @@ public class Divider {
         return true;
     }
 
-    private void test(Dot d,LinkedList<Dot> mother,LinkedList<Dot> newList){
+    private void test(Dot d,ArrayList<Dot> mother,ArrayList<Dot> newList){
         if(d.isConnected){
             return;
         }
         d.isConnected=true;
         mother.remove(d);
         newList.add(d);
-        LinkedList<Dot> l = d.giveList();
+        ArrayList<Dot> l = d.giveList();
         for(int i=0;i<l.size();i++){
             test(l.get(i),mother,newList);
         }
     }
     private void reset(Graph g){
-        LinkedList<Dot> list = g.getList();
+        ArrayList<Dot> list = g.getList();
         for(int i=0;i<list.size();i++){
             list.get(i).isConnected=false;
         }

@@ -46,9 +46,14 @@ public class Test {
         Thread t = new Thread(() -> {
             long start1=0;
             start1 = System.currentTimeMillis();
+            Tournament tournament = new Tournament();
+            tournament.run(graphName);
+            System.out.println(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
+            /*
+            start1 = System.currentTimeMillis();
             cleanerAndDevider.cleanAndDivide(g);
             System.out.println(graphName+"  "+"CleaningAndDeviding Time: " + (System.currentTimeMillis() - start1));
-
+/*
             start1 = System.currentTimeMillis();
             int exact = g.giveCN();
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
@@ -64,12 +69,13 @@ public class Test {
             cleaner.cleanUp(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println(" For Cleaning");
-
+    *//*
             start1 = System.currentTimeMillis();
             int up1 = powell.doPowell(g);
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println("   upper: " + up1);
-            
+            */
+    /*
             start1 = System.currentTimeMillis();
             int up2 = g.getVertices();
             for (int i = 0; i < g.getVertices(); i++) {

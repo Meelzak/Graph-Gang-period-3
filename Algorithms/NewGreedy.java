@@ -1,7 +1,7 @@
 package Algorithms;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 import Testing.*;
 
@@ -11,7 +11,7 @@ public class NewGreedy {
 	private int upperbound = 0;
 	
 	public void doGreedy(int startVertix, Graph g) {
-		LinkedList<Dot> list = (LinkedList<Dot>) g.getList().clone();
+		ArrayList<Dot> list = (ArrayList<Dot>) g.getList().clone();
 		setUpper(0);
 		//to have a starting point:
 		list.get(startVertix).setContent(1);
@@ -41,7 +41,7 @@ public class NewGreedy {
 		gReset(list);
 	}
 	
-	public void setColor(int vertix, LinkedList<Dot> list) {
+	public void setColor(int vertix, ArrayList<Dot> list) {
 		//check for every colour
 		for (int i = 1; i < list.size()+ 1; i++) {
 			//assume the color is not there, if it is so, disprove this statement
@@ -63,9 +63,9 @@ public class NewGreedy {
 	}
 	
 	//count the colors used in this coloring of the graph:
-	public void countColours(LinkedList<Dot> list) {
-		//make a new arraylist for the colors you used
-		ArrayList<Integer> colorList =new  ArrayList<Integer>(); 
+	public void countColours(ArrayList<Dot> list) {
+		//make a new ArrayList for the colors you used
+		ArrayList<Integer> colorList =new  ArrayList<Integer>();
 		
         for(int i=0;i<list.size();i++){
                 colorList.add(list.get(i).giveContent());
@@ -84,7 +84,7 @@ public class NewGreedy {
 	}
 	
 	//a method that adds one for every colored connection a vertex has, so it is easy to rank them all from highest to lowest
-	public void setColoredConnections(int vertix, LinkedList<Dot> list) {
+	public void setColoredConnections(int vertix, ArrayList<Dot> list) {
 		for (int i = 0; i < list.get(vertix).giveList().size(); i++) {
 			((Dot) list.get(vertix).giveList().get(i)).addColouredConnections();
 		}
@@ -99,7 +99,7 @@ public class NewGreedy {
 		return upperbound;
 	}
 	
-	public void gReset(LinkedList<Dot> list){
+	public void gReset(ArrayList<Dot> list){
         for(int i=0;i<list.size();i++){
             list.get(i).setContent(0);
             list.get(i).resetColouredConnections();

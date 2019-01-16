@@ -1,9 +1,9 @@
 package Algorithms;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 import Testing.*;
 public class NewForce{
@@ -12,15 +12,17 @@ public class NewForce{
     //Returns the chromatic number
     //Gets called in chromatic manager
     //Returns lowerbound if lowerbound == upperbound
-    public int doNewForce(Graph graph, int upperBound, int lowerBound){
+    public int doNewForce(Graph graph, int upperBound, int lowerBound,boolean println){
         if(lowerBound==upperBound){
             return lowerBound;
         }
         upperBound--;
-        LinkedList<Dot> list = graph.getList();
+        ArrayList<Dot> list = graph.getList();
         //dF is the boolean function which checks whether two adjacent vertices are same color or no
         while(dF(list, upperBound, 0)){
-            System.out.println("Upperbound "+upperBound+ " Works");
+            if(println){
+                System.out.println("NEW BEST UPPER BOUND = "+upperBound);
+            }
             if(upperBound==lowerBound){
                 upperBound--;
                 break;
@@ -31,7 +33,7 @@ public class NewForce{
         return upperBound+1;
         }
 
-    public boolean dF(LinkedList<Dot> list,int color,int dotPosition){
+    public boolean dF(ArrayList<Dot> list,int color,int dotPosition){
         boolean allColored=true;
         for(int i=0;i<list.size();i++){ //Add a size and getSize to graph too.
             if(list.get(i).giveContent()==0){
@@ -56,7 +58,7 @@ public class NewForce{
         return false;
     }
     //Check is the chromatic number is true or not
-    public boolean cNumberTrue(LinkedList<Dot> list,int color){
+    public boolean cNumberTrue(ArrayList<Dot> list,int color){
         for(int i=0;i<list.size();i++){
             if(list.get(i).giveContent()==color){
                 return false;

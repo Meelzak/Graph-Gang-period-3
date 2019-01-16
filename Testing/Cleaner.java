@@ -1,6 +1,6 @@
 package Testing;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Cleaner {
     public boolean cleanUp(Graph graph) {
@@ -11,7 +11,7 @@ public class Cleaner {
         }
         boolean cleaned = false;
         int counter = 0;
-        LinkedList<Dot> list = graph.getList();
+        ArrayList<Dot> list = graph.getList();
         while (!cleaned) {
             cleaned = true;
             for (int i = 0; i < list.size(); i++) {
@@ -36,22 +36,23 @@ public class Cleaner {
                     graph.setVerticesMinus();
                     graph.setEdgesMinus(minus);
                     cleaned = false;
-                    System.out.println("Removed full Connected");
+                    //System.out.println("Removed full Connected");
                     graph.addAddToChrom();
+                    graph.setLowerBound(-1);
+                    graph.setUpperBound(-1);
                     counter++;
                     //dem Graph das Sagen
                 }
             }
         }
         double percent = ((double)counter/(double)startVertices)*100;
-        System.out.println("Removed Vertices: " + counter + " || "+percent+ " percent");
+        //System.out.println("Removed Vertices: " + counter + " || "+percent+ " percent");
         if (graph.getVertices() <= 0) {
             if (min == 1) {
                 graph.getList().add(new Dot());
                 graph.setVerticesPlus();
             }
             if (min == 0) {
-                System.out.println("doda");
                 Dot d1 = new Dot();
                 Dot d2 = new Dot();
                 d1.setConnection(d2);

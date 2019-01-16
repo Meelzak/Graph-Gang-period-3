@@ -12,7 +12,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class Reader{
     private final String path;
@@ -46,7 +46,7 @@ public class Reader{
             }
 
             //create an DotList
-            LinkedList<Dot> list = new LinkedList<>();
+            ArrayList<Dot> list = new ArrayList<>();
             for(int i=0;i<vertices;i++){
                 list.add(new Dot());
             }
