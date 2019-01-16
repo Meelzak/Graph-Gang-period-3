@@ -9,9 +9,11 @@ package Testing;
  * Cavid Karca
  */
 
+import Algorithms.CircleDetector;
 import Algorithms.MC0;
 import Algorithms.NewForce;
 import Algorithms.Powell;
+import javafx.scene.shape.Circle;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -112,6 +114,15 @@ public class Graph{
             return max+addToChrom;
         }
         else{
+            CircleDetector circleDetector = new CircleDetector();
+            if(circleDetector.detectCircle(this)){
+                if(this.getVertices()%2==0){
+                    return 2+addToChrom;
+                }
+                else {
+                    return 3+addToChrom;
+                }
+            }
             NewForce newForce = new NewForce();
             if(upperBound!=-1){
                 if(lowerBound!=-1){
@@ -137,7 +148,7 @@ public class Graph{
         if(this.hasSub()){
             int max=0;
             for(int i=0;i<subGraph.size();i++){
-                int x=subGraph.get(i).giveCN();
+                int x=subGraph.get(i).giveUp();
                 if(x>max){
                     max=x;
                 }
@@ -146,7 +157,6 @@ public class Graph{
         }
         else{
             Powell powell = new Powell();
-
             return addToChrom + powell.doPowell(this);
         }
     }
@@ -154,7 +164,7 @@ public class Graph{
         if(this.hasSub()){
             int max=0;
             for(int i=0;i<subGraph.size();i++){
-                int x=subGraph.get(i).giveCN();
+                int x=subGraph.get(i).giveLow();
                 if(x>max){
                     max=x;
                 }
@@ -166,7 +176,5 @@ public class Graph{
             return addToChrom + mc0.search(this);
         }
     }
-
-
 
 }

@@ -20,20 +20,6 @@ public class CircleDetector {
 				break;
 			}
 		}
-		this.setChromatic(g);
 		return circle;
 	}
-	
-	public void setChromatic(Graph g) {
-		if (circle && (g.getList().size() % 2 == 0)) {
-			chromaticNumber = 2;
-		}
-		else if (circle && (g.getList().size() % 2 != 0)) {
-			chromaticNumber = 3;
-		}
-	}
-	public int getChromatic() {
-		return chromaticNumber;
-	}
-
 }
