@@ -7,6 +7,8 @@ What we want to test:
 - difference that nr of vertices & edges make
 - density of graphs
 - special structure algorithms vs no special structure algorithms
+- why do some graphs have the same upper and lowerbound?
+- why have some graphs a big difference between upper and lowerbound?
 ----- more if you think of new ones -----
 
 Rules for testing:
