@@ -1,0 +1,100 @@
+with sort MC0
+-------------------
+g1.txt
+Density: 1.1267101851023875 percent
+g1.txt  time: 30   lower MC0: 3
+-------------------
+-------------------
+g10.txt
+Density: 1.438481197517342 percent
+g10.txt  time: 2   lower MC0: 2
+-------------------
+-------------------
+g11.txt
+Density: 6.651204548855305 percent
+g11.txt  time: 3   lower MC0: 15
+-------------------
+-------------------
+g12.txt
+Density: 0.269179004037685 percent
+g12.txt  time: 80   lower MC0: 2
+-------------------
+-------------------
+g13.txt
+Density: 29.69187675070028 percent
+g13.txt  time: 3   lower MC0: 9
+-------------------
+-------------------
+g14.txt
+Density: 0.4400407913919454 percent
+g14.txt  time: 139   lower MC0: 3
+-------------------
+-------------------
+g15.txt
+Density: 7.1375787872201695 percent
+g15.txt  time: 6   lower MC0: 5
+-------------------
+-------------------
+g16.txt
+Density: 2.416579380517732 percent
+g16.txt  time: 1   lower MC0: 2
+-------------------
+-------------------
+g17.txt
+Density: 3.5220125786163523 percent
+g17.txt  time: 0   lower MC0: 8
+-------------------
+-------------------
+g18.txt
+Density: 13.106283029947152 percent
+g18.txt  time: 22   lower MC0: 10
+-------------------
+-------------------
+g19.txt
+Density: 4.904954200728849 percent
+g19.txt  time: 2   lower MC0: 11
+-------------------
+-------------------
+g2.txt
+Density: 0.9909388856757277 percent
+g2.txt  time: 29   lower MC0: 3
+-------------------
+-------------------
+g20.txt
+Density: 3.349801180865165 percent
+g20.txt  time: 26   lower MC0: 8
+-------------------
+-------------------
+g3.txt
+Density: 5.356614382953537 percent
+g3.txt  time: 3   lower MC0: 6
+-------------------
+-------------------
+g4.txt
+Density: 9.098924351966144 percent
+g4.txt  time: 1   lower MC0: 4
+-------------------
+-------------------
+g5.txt
+Density: 14.938074545282154 percent
+-------------------
+-------------------
+g6.txt
+Density: 0.19404823280059574 percent
+g6.txt  time: 34   lower MC0: 2
+-------------------
+-------------------
+g7.txt
+Density: 58.58250276854928 percent
+g7.txt  time: 14   lower MC0: 8
+-------------------
+-------------------
+g8.txt
+Density: 87.3743607829307 percent
+g8.txt  time: 27   lower MC0: 98
+-------------------
+-------------------
+g9.txt
+Density: 4.551266871892019 percent
+g9.txt  time: 2   lower MC0: 3
+-------------------

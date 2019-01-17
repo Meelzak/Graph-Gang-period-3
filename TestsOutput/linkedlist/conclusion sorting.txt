@@ -1,0 +1,4 @@
+Sorting the maximum clique algorithms like in Powell won't have any benefits on computational time.
+Both BK and MC time weren't changed by it, it even was sometimes slower due to the sorting process.
+This was most seen on bigger graphs.
+(If you guys want the results I can add it as well)
