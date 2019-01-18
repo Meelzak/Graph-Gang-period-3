@@ -1,0 +1,394 @@
+Calculations done on intel i5-6200u
+Using the new algorithms contain linkedlists
+computational time with cleaning
+-------------------
+g1.txt
+Density: 1.1267101851023875 percent
+Removed Vertices: 3 || 1.4150943396226416 percent
+g1.txt  CleaningAndDeviding Time: 9
+g1.txt  time: 12   CN: 3
+g1.txt  time: 1   upper: 3
+g1.txt  time: 8   lower: 3
+g1.txt  time: 5   lower MC: 3
+g1.txt  time: 7   lower MC0: 3
+g1.txt  time: 0   groups: 3
+-------------------
+-------------------
+g10.txt
+Density: 1.438481197517342 percent
+Removed Vertices: 6 || 3.614457831325301 percent
+g10.txt  CleaningAndDeviding Time: 0
+Upperbound 3 Works
+g10.txt  time: 149   CN: 3
+g10.txt  time: 1   upper: 3
+g10.txt  time: 1   lower: 2
+g10.txt  time: 0   lower MC: 2
+g10.txt  time: 1   lower MC0: 2
+g10.txt  time: 0   groups: 3
+-------------------
+-------------------
+g11.txt
+Density: 6.651204548855305 percent
+Removed Vertices: 3 || 1.8292682926829267 percent
+g11.txt  CleaningAndDeviding Time: 1
+g11.txt  time: 2   CN: 15
+g11.txt  time: 1   upper: 15
+g11.txt  time: 84   lower: 15
+g11.txt  time: 1   lower MC: 15
+g11.txt  time: 2   lower MC0: 15
+g11.txt  time: 0   groups: 15
+-------------------
+-------------------
+g12.txt
+Density: 0.269179004037685 percent
+Removed Vertices: 622 || 83.60215053763442 percent
+g12.txt  time: ?   CN: unknown didn't finish on time
+g12.txt  CleaningAndDeviding Time: 4
+g12.txt  time: 1   upper: 3
+g12.txt  time: 3   lower: 2
+g12.txt  time: 2   lower MC: 2
+g12.txt  time: 2   lower MC0: 2
+g12.txt  time: 0   groups: 3
+-------------------
+-------------------
+g13.txt
+Density: 29.69187675070028 percent
+Removed Vertices: 4 || 4.705882352941177 percent
+g13.txt  CleaningAndDeviding Time: 1
+Upperbound 13 Works
+g13.txt  time: ?   CN: unknown didn't finish on time
+g13.txt  time: 2   upper: 14
+g13.txt  time: 34   lower: 9
+g13.txt  time: 3   lower MC: 9
+g13.txt  time: 3   lower MC0: 9
+g13.txt  time: 1   groups: 15
+-------------------
+-------------------
+g14.txt
+Density: 0.4400407913919454 percent
+Removed Vertices: 6 || 0.6615214994487321 percent
+g14.txt  CleaningAndDeviding Time: 4
+Upperbound 12 Works
+g14.txt  time: ?   CN: unknown didn't finish on time
+g14.txt  time: 3   upper: 5
+g14.txt  time: 25   lower: 3
+g14.txt  time: 24   lower MC: 3
+g14.txt  time: 147   lower MC0: 3
+g14.txt  time: 2   groups: 5
+-------------------
+-------------------
+g15.txt
+Density: 7.1375787872201695 percent
+Removed Vertices: 5 || 2.3255813953488373 percent
+g15.txt  CleaningAndDeviding Time: 1
+g15.txt  time: ?   CN: unknown didn't finish on time
+g15.txt  time: 1   upper: 10
+g15.txt  time: 11   lower: 5
+g15.txt  time: 3   lower MC: 5
+g15.txt  time: 7   lower MC0: 5
+g15.txt  time: 0   groups: 10
+-------------------
+-------------------
+g16.txt
+Density: 2.416579380517732 percent
+Removed Vertices: 3 || 1.8292682926829267 percent
+g16.txt  CleaningAndDeviding Time: 0
+Upperbound 4 Works
+g16.txt  time: ?   CN: unknown didn't finish on time
+g16.txt  time: 0   upper: 5
+g16.txt  time: 1   lower: 2
+g16.txt  time: 1   lower MC: 2
+g16.txt  time: 2   lower MC0: 2
+g16.txt  time: 0   groups: 4
+-------------------
+-------------------
+g17.txt
+Density: 3.5220125786163523 percent
+Removed Vertices: 41 || 38.67924528301887 percent
+g17.txt  CleaningAndDeviding Time: 0
+g17.txt  time: 0   CN: 8
+g17.txt  time: 1   upper: 8
+g17.txt  time: 0   lower: 8
+g17.txt  time: 0   lower MC: 8
+g17.txt  time: 0   lower MC0: 8
+g17.txt  time: 0   groups: 8
+-------------------
+-------------------
+g18.txt
+Density: 13.106283029947152 percent
+Removed Vertices: 6 || 4.580152671755725 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+g18.txt  CleaningAndDeviding Time: 7
+Upperbound 10 Works
+Upperbound 10 Works
+Upperbound 10 Works
+Upperbound 10 Works
+Upperbound 10 Works
+g18.txt  time: 1   CN: 10
+g18.txt  time: 0   upper: 10
+g18.txt  time: 17   lower: 10
+g18.txt  time: 1   lower MC: 10
+g18.txt  time: 2   lower MC0: 10
+g18.txt  time: 0   groups: 11
+-------------------
+-------------------
+g19.txt
+Density: 4.904954200728849 percent
+Removed Vertices: 31 || 21.678321678321677 percent
+g19.txt  CleaningAndDeviding Time: 0
+g19.txt  time: 1   CN: 11
+g19.txt  time: 0   upper: 11
+g19.txt  time: 3   lower: 11
+g19.txt  time: 1   lower MC: 11
+g19.txt  time: 0   lower MC0: 11
+g19.txt  time: 0   groups: 11
+-------------------
+-------------------
+g2.txt
+Density: 0.9909388856757277 percent
+Removed Vertices: 29 || 6.359649122807018 percent
+g2.txt  CleaningAndDeviding Time: 1
+Upperbound 5 Works
+g2.txt  time: ?   CN: unknown didn't finish on time
+g2.txt  time: 2   upper: 6
+g2.txt  time: 7   lower: 3
+g2.txt  time: 5   lower MC: 3
+g2.txt  time: 18   lower MC0: 3
+g2.txt  time: 1   groups: 5
+-------------------
+-------------------
+g20.txt
+Density: 3.349801180865165 percent
+Removed Vertices: 5 || 1.2919896640826873 percent
+Removed Vertices: 1 || 0.5235602094240838 percent
+Removed Vertices: 1 || 1.0526315789473684 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 1.0526315789473684 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 0.5235602094240838 percent
+Removed Vertices: 1 || 1.0526315789473684 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 1.0526315789473684 percent
+-------------------
+-------------------
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+g20.txt  CleaningAndDeviding Time: 5623
+g20.txt  time: 1   CN: 9
+g20.txt  time: 1   upper: 6
+g20.txt  time: 6   lower: 7
+g20.txt  time: 4   lower MC: 2
+g20.txt  time: 9   lower MC0: 2
+g20.txt  time: 1   groups: 3
+-------------------
+g3.txt
+Density: 5.356614382953537 percent
+Removed Vertices: 4 || 1.834862385321101 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 6 || 100.0 percent
+doda
+g3.txt  CleaningAndDeviding Time: 1
+g3.txt  time: ?   CN: unknown didn't finish on time
+g3.txt  time: 1   upper: 8
+g3.txt  time: 3   lower: 6
+g3.txt  time: 1   lower MC: 3
+g3.txt  time: 5   lower MC0: 3
+g3.txt  time: 0   groups: 8
+-------------------
+-------------------
+g4.txt
+Density: 9.098924351966144 percent
+Removed Vertices: 7 || 6.5420560747663545 percent
+g4.txt  CleaningAndDeviding Time: 0
+Upperbound 6 Works
+g3.txt  time: ?   CN: unknown didn't finish on time
+g4.txt  time: 1   upper: 7
+g4.txt  time: 1   lower: 4
+g4.txt  time: 0   lower MC: 4
+g4.txt  time: 0   lower MC0: 4
+g4.txt  time: 0   groups: 7
+-------------------
+-------------------
+g6.txt
+Density: 0.19404823280059574 percent
+Removed Vertices: 516 || 97.54253308128544 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+g6.txt  CleaningAndDeviding Time: 0
+g6.txt  time: 0   CN: 3
+g6.txt  time: 0   upper: 3
+g6.txt  time: 0   lower: 2
+g6.txt  time: 7   lower MC: 2
+g6.txt  time: 0   lower MC0: 2
+g6.txt  time: 0   groups: 3
+-------------------
+-------------------
+g7.txt
+Density: 58.58250276854928 percent
+Removed Vertices: 7 || 16.27906976744186 percent
+g7.txt  CleaningAndDeviding Time: 0
+g7.txt  time: ?   CN: unknown didn't finish on time
+g7.txt  time: 0   upper: 12
+g7.txt  time: 88   lower: 8
+g7.txt  time: 24   lower MC: 8
+g7.txt  time: 21   lower MC0: 8
+g7.txt  time: 0   groups: 12
+-------------------
+-------------------
+g8.txt
+Density: 87.3743607829307 percent
+Removed Vertices: 103 || 96.26168224299066 percent
+g8.txt  CleaningAndDeviding Time: 2
+g8.txt  time: 1   CN: 98
+g8.txt  time: 0   upper: 2
+g8.txt  time: 0   lower: 2
+g8.txt  time: 0   lower MC: 2
+g8.txt  time: 0   lower MC0: 2
+g8.txt  time: 0   groups: 2
+-------------------
+
+-------------------
+g9.txt
+Density: 4.551266871892019 percent
+Removed Vertices: 6 || 2.912621359223301 percent
+g9.txt  CleaningAndDeviding Time: 10
+Upperbound 7 Works
+Upperbound 6 Works
+g9.txt  time: ?   CN: unknown didn't finish on time
+g9.txt  time: 0   upper: 8
+g9.txt  time: 2   lower: 3
+g9.txt  time: 1   lower MC: 3
+g9.txt  time: 2   lower MC0: 3
+g9.txt  time: 1   groups: 6
+-------------------
+-------------------
+g5.txt
+Density: 14.938074545282154 percent
+Removed Vertices: 7 || 0.1746942850012478 percent
+g5.txt  CleaningAndDeviding Time: 821
+g9.txt  time: ?   CN: unknown didn't finish on time
+g5.txt  time: 760   upper: 11
+g9.txt  time: ?   lower: unknown didn't finish on time
+g9.txt  time: ?   lowerMC: unknown didn't finish on time
+g9.txt  time: ?   lowerMC0: unknown didn't finish on time
+g9.txt  time: ?   groups: unknown didn't finish on time
+-------------------

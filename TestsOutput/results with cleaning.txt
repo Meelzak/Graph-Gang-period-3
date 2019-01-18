@@ -1,0 +1,296 @@
+regular test
+cleaner and divider used
+Time limit: 10 minutes
+Calculations done on intel i7-6700hq
+-------------------
+g1.txt
+Density: 1.1267101851023875 percent
+Removed Vertices: 3 || 1.4150943396226416 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 3
+CHROMATIC NUMBER = 3
+g1.txt  time: 10
+-------------------
+-------------------
+g10.txt
+Density: 1.438481197517342 percent
+Removed Vertices: 6 || 3.614457831325301 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 3
+g10.txt  time: 16
+-------------------
+-------------------
+g11.txt
+Density: 6.651204548855305 percent
+Removed Vertices: 3 || 1.8292682926829267 percent
+NEW BEST UPPER BOUND = 15
+NEW BEST LOWER BOUND = 15
+CHROMATIC NUMBER = 15
+g11.txt  time: 10
+-------------------
+-------------------
+g12.txt
+Density: 0.269179004037685 percent
+Removed Vertices: 622 || 83.60215053763442 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 2
+g12.txt  time: 5
+-------------------
+-------------------
+g13.txt
+Density: 29.69187675070028 percent
+Removed Vertices: 4 || 4.705882352941177 percent
+NEW BEST UPPER BOUND = 14
+NEW BEST LOWER BOUND = 9
+-------------------
+-------------------
+g14.txt
+Density: 0.4400407913919454 percent
+Removed Vertices: 6 || 0.6615214994487321 percent
+NEW BEST UPPER BOUND = 5
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+g15.txt
+Density: 7.1375787872201695 percent
+Removed Vertices: 5 || 2.3255813953488373 percent
+NEW BEST UPPER BOUND = 10
+NEW BEST LOWER BOUND = 5
+-------------------
+-------------------
+g16.txt
+Density: 2.416579380517732 percent
+Removed Vertices: 3 || 1.8292682926829267 percent
+NEW BEST UPPER BOUND = 4
+NEW BEST LOWER BOUND = 2
+-------------------
+-------------------
+g17.txt
+Density: 3.5220125786163523 percent
+Removed Vertices: 41 || 38.67924528301887 percent
+NEW BEST UPPER BOUND = 8
+NEW BEST LOWER BOUND = 8
+CHROMATIC NUMBER = 8
+g17.txt  time: 1
+-------------------
+-------------------
+g18.txt
+Density: 13.106283029947152 percent
+Removed Vertices: 6 || 4.580152671755725 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+NEW BEST UPPER BOUND = 10
+NEW BEST LOWER BOUND = 10
+CHROMATIC NUMBER = 10
+g18.txt  time: 4
+-------------------
+"C:\Program Files\Java\jdk1.8.0_191\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\lib\idea_rt.jar=33736:C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_191\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_191\jre\lib\rt.jar;D:\Win7 documenten\Luc zijn Omgeving\Project period 3\Github\out\production\Github" Testing.Tester
+Console output is saving to: D:\Win7 documenten\Luc zijn Omgeving\Project period 3\Github\src\output.txt
+-------------------
+g19.txt
+Density: 4.904954200728849 percent
+Removed Vertices: 31 || 21.678321678321677 percent
+NEW BEST UPPER BOUND = 11
+NEW BEST LOWER BOUND = 11
+CHROMATIC NUMBER = 11
+g19.txt  time: 8
+-------------------
+-------------------
+g2.txt
+Density: 0.9909388856757277 percent
+Removed Vertices: 29 || 6.359649122807018 percent
+NEW BEST UPPER BOUND = 5
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+g20.txt
+Density: 3.349801180865165 percent
+Removed Vertices: 5 || 1.2919896640826873 percent
+Removed Vertices: 1 || 0.5235602094240838 percent
+Removed Vertices: 1 || 1.0526315789473684 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 1.0526315789473684 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 0.5235602094240838 percent
+Removed Vertices: 1 || 1.0526315789473684 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 1.0526315789473684 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 2.127659574468085 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 4.3478260869565215 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 1 || 9.090909090909092 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+NEW BEST UPPER BOUND = 9
+NEW BEST LOWER BOUND = 8
+CHROMATIC NUMBER = 9
+g20.txt  time: 15
+-------------------
+-------------------
+g3.txt
+Density: 5.356614382953537 percent
+Removed Vertices: 4 || 1.834862385321101 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 6 || 100.0 percent
+NEW BEST UPPER BOUND = 8
+NEW BEST LOWER BOUND = 6
+-------------------
+-------------------
+g6.txt
+Density: 0.19404823280059574 percent
+Removed Vertices: 516 || 97.54253308128544 percent
+Removed Vertices: 0 || 0.0 percent
+Removed Vertices: 0 || 0.0 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 3
+g6.txt  time: 1
+-------------------
+-------------------
+g7.txt
+Density: 58.58250276854928 percent
+Removed Vertices: 7 || 16.27906976744186 percent
+NEW BEST UPPER BOUND = 12
+NEW BEST LOWER BOUND = 8
+-------------------
+-------------------
+g8.txt
+Density: 87.3743607829307 percent
+Removed Vertices: 103 || 96.26168224299066 percent
+NEW BEST UPPER BOUND = 98
+NEW BEST LOWER BOUND = 98
+CHROMATIC NUMBER = 98
+g8.txt  time: 2
+-------------------
+-------------------
+g9.txt
+Density: 4.551266871892019 percent
+Removed Vertices: 6 || 2.912621359223301 percent
+NEW BEST UPPER BOUND = 6
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+g5.txt
+Density: 14.938074545282154 percent
+Removed Vertices: 7 || 0.1746942850012478 percent
+NEW BEST UPPER BOUND = 4
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 2
+g5.txt  time: 55039
+-------------------

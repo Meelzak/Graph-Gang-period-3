@@ -1,0 +1,126 @@
+Difference lowerbounds 
+No cleaner and divider used
+Time limit: 10 minutes
+Calculations done on intel i5-6200u
+upper is powell
+upper greedy is the dynamic greedy
+-------------------
+g1.txt
+Density: 1.1267101851023875 percent
+g1.txt  time: 2   upper: 3
+g1.txt  time: 82   upper greedy: 5
+-------------------
+-------------------
+g10.txt
+Density: 1.438481197517342 percent
+g10.txt  time: 1   upper: 3
+g10.txt  time: 30   upper greedy: 6
+-------------------
+-------------------
+g11.txt
+Density: 6.651204548855305 percent
+g11.txt  time: 1   upper: 15
+g11.txt  time: 20   upper greedy: 16
+-------------------
+-------------------
+g12.txt
+Density: 0.269179004037685 percent
+g12.txt  time: 1   upper: 3
+g12.txt  time: 616   upper greedy: 4
+-------------------
+-------------------
+g13.txt
+Density: 29.69187675070028 percent
+g13.txt  time: 2   upper: 14
+g13.txt  time: 74   upper greedy: 15
+-------------------
+-------------------
+g14.txt
+Density: 0.4400407913919454 percent
+g14.txt  time: 4   upper: 5
+g14.txt  time: 1148   upper greedy: 6
+-------------------
+-------------------
+g15.txt
+Density: 7.1375787872201695 percent
+g15.txt  time: 3   upper: 10
+g15.txt  time: 28   upper greedy: 10
+-------------------
+-------------------
+g16.txt
+Density: 2.416579380517732 percent
+g16.txt  time: 0   upper: 4
+g16.txt  time: 13   upper greedy: 6
+-------------------
+-------------------
+g17.txt
+Density: 3.5220125786163523 percent
+g17.txt  time: 1   upper: 8
+g17.txt  time: 51   upper greedy: 9
+-------------------
+-------------------
+g18.txt
+Density: 13.106283029947152 percent
+g18.txt  time: 1   upper: 11
+g18.txt  time: 58   upper greedy: 14
+-------------------
+-------------------
+g19.txt
+Density: 4.904954200728849 percent
+g19.txt  time: 1   upper: 11
+g19.txt  time: 18   upper greedy: 13
+-------------------
+-------------------
+g2.txt
+Density: 0.9909388856757277 percent
+g2.txt  time: 0   upper: 5
+g2.txt  time: 152   upper greedy: 7
+-------------------
+-------------------
+g20.txt
+Density: 3.349801180865165 percent
+g20.txt  time: 3   upper: 9
+g20.txt  time: 209   upper greedy: 10
+-------------------
+-------------------
+g3.txt
+Density: 5.356614382953537 percent
+g3.txt  time: 1   upper: 8
+g3.txt  time: 27   upper greedy: 8
+-------------------
+-------------------
+g4.txt
+Density: 9.098924351966144 percent
+g4.txt  time: 1   upper: 7
+g4.txt  time: 5   upper greedy: 8
+-------------------
+-------------------
+g5.txt
+Density: 14.938074545282154 percent
+g5.txt  time: 64   upper: 4
+g5.txt  time: 159705   upper greedy: 4
+-------------------
+-------------------
+g6.txt
+Density: 0.19404823280059574 percent
+g6.txt  time: 3   upper: 3
+g6.txt  time: 277   upper greedy: 4
+-------------------
+-------------------
+g7.txt
+Density: 58.58250276854928 percent
+g7.txt  time: 2   upper: 12
+g7.txt  time: 1   upper greedy: 13
+-------------------
+-------------------
+g8.txt
+Density: 87.3743607829307 percent
+g8.txt  time: 2   upper: 98
+g8.txt  time: 77   upper greedy: 99
+-------------------
+-------------------
+g9.txt
+Density: 4.551266871892019 percent
+g9.txt  time: 0   upper: 6
+g9.txt  time: 23   upper greedy: 8
+-------------------

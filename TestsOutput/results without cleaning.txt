@@ -1,0 +1,144 @@
+regular test
+cleaner and divider not used
+Time limit: 10 minutes
+Calculations done on intel i7-6700hq
+-------------------
+g1.txt
+Density: 1.1267101851023875 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 3
+CHROMATIC NUMBER = 3
+g1.txt  time: 10
+-------------------
+-------------------
+g10.txt
+Density: 1.438481197517342 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 3
+g10.txt  time: 14
+-------------------
+-------------------
+g11.txt
+Density: 6.651204548855305 percent
+NEW BEST UPPER BOUND = 15
+NEW BEST LOWER BOUND = 15
+CHROMATIC NUMBER = 15
+g11.txt  time: 3
+-------------------
+-------------------
+g12.txt
+Density: 0.269179004037685 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 2
+-------------------
+-------------------
+g13.txt
+Density: 29.69187675070028 percent
+NEW BEST UPPER BOUND = 14
+NEW BEST LOWER BOUND = 9
+-------------------
+-------------------
+g14.txt
+Density: 0.4400407913919454 percent
+NEW BEST UPPER BOUND = 5
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+g15.txt
+Density: 7.1375787872201695 percent
+NEW BEST UPPER BOUND = 10
+NEW BEST LOWER BOUND = 5
+-------------------
+-------------------
+g16.txt
+Density: 2.416579380517732 percent
+NEW BEST UPPER BOUND = 4
+NEW BEST LOWER BOUND = 2
+-------------------
+-------------------
+g17.txt
+Density: 3.5220125786163523 percent
+NEW BEST UPPER BOUND = 8
+NEW BEST LOWER BOUND = 8
+CHROMATIC NUMBER = 8
+g17.txt  time: 6
+-------------------
+-------------------
+g18.txt
+Density: 13.106283029947152 percent
+NEW BEST UPPER BOUND = 11
+NEW BEST LOWER BOUND = 10
+CHROMATIC NUMBER = 10
+g18.txt  time: 18
+-------------------
+-------------------
+g19.txt
+Density: 4.904954200728849 percent
+NEW BEST UPPER BOUND = 11
+NEW BEST LOWER BOUND = 11
+CHROMATIC NUMBER = 11
+g19.txt  time: 1
+-------------------
+-------------------
+g2.txt
+Density: 0.9909388856757277 percent
+NEW BEST UPPER BOUND = 5
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+g20.txt
+Density: 3.349801180865165 percent
+NEW BEST UPPER BOUND = 9
+NEW BEST LOWER BOUND = 8
+-------------------
+-------------------
+g3.txt
+Density: 5.356614382953537 percent
+NEW BEST UPPER BOUND = 8
+NEW BEST LOWER BOUND = 6
+-------------------
+-------------------
+g4.txt
+Density: 9.098924351966144 percent
+NEW BEST UPPER BOUND = 7
+NEW BEST LOWER BOUND = 4
+CHROMATIC NUMBER = 5
+g4.txt  time: 58992
+-------------------
+-------------------
+g6.txt
+Density: 0.19404823280059574 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 3
+g6.txt  time: 14
+-------------------
+-------------------
+g7.txt
+Density: 58.58250276854928 percent
+NEW BEST UPPER BOUND = 12
+NEW BEST LOWER BOUND = 8
+-------------------
+-------------------
+g8.txt
+Density: 87.3743607829307 percent
+NEW BEST UPPER BOUND = 98
+NEW BEST LOWER BOUND = 98
+CHROMATIC NUMBER = 98
+g8.txt  time: 20
+-------------------
+-------------------
+g9.txt
+Density: 4.551266871892019 percent
+NEW BEST UPPER BOUND = 6
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+g5.txt
+Density: 14.938074545282154 percent
+NEW BEST UPPER BOUND = 4
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 2
+g5.txt  time: 57344
+-------------------
