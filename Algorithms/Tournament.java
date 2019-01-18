@@ -19,6 +19,7 @@ public class Tournament {
         */
         CleanerAndDevider cleanerAndDevider = new CleanerAndDevider();
         Reader reader = new Reader(Parameters.path);
+        TournamentPrinter printer = new TournamentPrinter();
         //Graph graph = reader.read(graphName);
         Graph graph2 = reader.read(graphName);
 
@@ -26,14 +27,15 @@ public class Tournament {
         graph2.sort();
         cleanerAndDevider.cleanAndDivide(graph2);
         int up = graph2.giveUp();
-        System.out.println(""+"NEW BEST UPPER BOUND = "+up);
+        printer.printUpperBound(up);
         int low = graph2.giveLow();
         if(graph2.getAddToChrom()==0){
             graph2.setUpperBound(up);
             graph2.setLowerBound(low);
         }
-        System.out.println(""+"NEW BEST LOWER BOUND = "+low);
-        System.out.println(""+"CHROMATIC NUMBER = "+graph2.giveCN());
+        printer.printLowerBound(low);
+        int exact = graph2.giveCN();
+        printer.printExact(exact);
     /*
         Thread t = new Thread(() -> {
             cleanerAndDevider.cleanAndDivide(graph2);

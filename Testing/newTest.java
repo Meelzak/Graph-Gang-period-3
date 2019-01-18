@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class newTest {
     public static void main(String[] args){
-        String graphName="g6.txt";
+        String graphName="g20.txt";
         System.out.println(graphName);
         long time = System.currentTimeMillis();
         CountDownLatch latch = new CountDownLatch(1);

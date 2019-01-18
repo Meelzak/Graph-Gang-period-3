@@ -10,12 +10,11 @@ import java.util.concurrent.TimeUnit;
 public class myTester {
     public static void main(String[] args){
 
+        Generator generator = new Generator();
+        Graph g = generator.GenerateGraphDensity(100,99);
 
-        String graphName="g5" +
-                ".txt";
-        System.out.println(graphName);
-        Reader reader = new Reader(Parameters.path);
-        Graph g = reader.read(graphName);
+        double density = ((double)g.getEdges()*2)/(g.getVertices()-1)/g.getVertices()*100;
+        System.out.println("Density: "+density+" percent");
 
         Powell powell = new Powell();
         Cleaner cleaner = new Cleaner();
