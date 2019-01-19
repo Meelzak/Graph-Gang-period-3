@@ -1,0 +1,145 @@
+Test results for the set of graphs of the second phase
+With cleaner, on a macbook
+
+When it has been running for one minute:
+
+-------------------
+graph1.txt
+Density: 17.91044776119403 percent
+NEW BEST UPPER BOUND = 8
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+graph2.txt
+Density: 23.46153846153846 percent
+NEW BEST UPPER BOUND = 10
+NEW BEST LOWER BOUND = 10
+CHROMATIC NUMBER = 10
+graph2.txt  time: 1
+-------------------
+-------------------
+graph3.txt
+Density: 25.254237288135595 percent
+NEW BEST UPPER BOUND = 2
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 2
+graph3.txt  time: 3
+-------------------
+-------------------
+graph4.txt
+Density: 10.882882882882882 percent
+NEW BEST UPPER BOUND = 11
+NEW BEST LOWER BOUND = 11
+CHROMATIC NUMBER = 11
+graph4.txt  time: 4
+-------------------
+-------------------
+graph5.txt
+Density: 4.0 percent
+NEW BEST UPPER BOUND = 4
+NEW BEST LOWER BOUND = 4
+CHROMATIC NUMBER = 4
+graph5.txt  time: 1
+-------------------
+-------------------
+graph6.txt
+Density: 4.995394411886423 percent
+NEW BEST UPPER BOUND = 54
+NEW BEST LOWER BOUND = 54
+CHROMATIC NUMBER = 54
+graph6.txt  time: 419
+-------------------
+-------------------
+graph7.txt
+Density: 25.0 percent
+NEW BEST UPPER BOUND = 9
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+graph8.txt
+Density: 2.1739130434782608 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 3
+CHROMATIC NUMBER = 3
+graph8.txt  time: 1
+-------------------
+-------------------
+graph9.txt
+Density: 88.27586206896552 percent
+NEW BEST UPPER BOUND = 16
+NEW BEST LOWER BOUND = 16
+CHROMATIC NUMBER = 16
+graph9.txt  time: 3
+-------------------
+-------------------
+graph10.txt
+Density: 26.153846153846157 percent
+NEW BEST UPPER BOUND = 7
+NEW BEST LOWER BOUND = 4
+CHROMATIC NUMBER = 5
+graph10.txt  time: 17
+-------------------
+-------------------
+graph11.txt
+Density: 78.47457627118644 percent
+NEW BEST UPPER BOUND = 22
+NEW BEST LOWER BOUND = 15
+-------------------
+-------------------
+graph12.txt
+Density: 5.797101449275362 percent
+NEW BEST UPPER BOUND = 8
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+graph14.txt
+Density: 9.240506329113925 percent
+NEW BEST UPPER BOUND = 6
+NEW BEST LOWER BOUND = 4
+CHROMATIC NUMBER = 4
+graph14.txt  time: 3
+-------------------
+-------------------
+graph15.txt
+Density: 33.088235294117645 percent
+NEW BEST UPPER BOUND = 5
+NEW BEST LOWER BOUND = 3
+CHROMATIC NUMBER = 4
+graph15.txt  time: 0
+-------------------
+-------------------
+graph16.txt
+Density: 32.45791245791246 percent
+NEW BEST UPPER BOUND = 13
+NEW BEST LOWER BOUND = 7
+-------------------
+-------------------
+graph17.txt
+Density: 33.333333333333336 percent
+NEW BEST UPPER BOUND = 3
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 3
+graph17.txt  time: 0
+-------------------
+-------------------
+graph18.txt
+Density: 12.627530580631378 percent
+NEW BEST UPPER BOUND = 8
+NEW BEST LOWER BOUND = 3
+-------------------
+-------------------
+graph19.txt
+Density: 21.648565859092177 percent
+NEW BEST UPPER BOUND = 31
+NEW BEST LOWER BOUND = 31
+CHROMATIC NUMBER = 31
+graph19.txt  time: 7
+-------------------
+-------------------
+graph20.txt
+Density: 14.634146341463413 percent
+NEW BEST UPPER BOUND = 5
+NEW BEST LOWER BOUND = 2
+CHROMATIC NUMBER = 4
+graph20.txt  time: 446
+-------------------
