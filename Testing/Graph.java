@@ -176,5 +176,33 @@ public class Graph{
             return addToChrom + mc0.search(this);
         }
     }
+    public ArrayList<Graph> giveLeafList(){
+        ArrayList<Graph> newList = new ArrayList<>();
+        doLeafList(newList);
+        return newList;
+    }
+    private void doLeafList(ArrayList<Graph> graphList){
+        if(this.hasSub()){
+            for(int i=0;i<subGraph.size();i++){
+               subGraph.get(i).doLeafList(graphList);
+            }
+            return;
+        }
+        else {
+            System.out.println("End V: "+this.vertices);
+            graphList.add(this);
+        }
+    }
+    public void mergeGraphs(ArrayList<Graph> list){
+        for (int i=0;i<list.size();i++){
+            this.mergeGraphs(list.get(i));
+
+        }
+    }
+    public void mergeGraphs(Graph graph){
+        this.edges=this.edges + graph.edges;
+        this.vertices=this.vertices + graph.vertices;
+        this.list.addAll(graph.getList());
+    }
 
 }

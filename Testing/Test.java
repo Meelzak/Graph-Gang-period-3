@@ -29,7 +29,9 @@ public class Test {
 
         Graph g = reader.read(graphName);
         double density = ((double)g.getEdges()*2)/(g.getVertices()-1)/g.getVertices()*100;
+        double density2 = ((double)g.getEdges()*2)/((g.getVertices()-1)*g.getVertices());
         System.out.println("Density: "+density+" percent");
+        System.out.println("Density2: "+density2+" percent");
 
         CountDownLatch latch = new CountDownLatch(1);
         Thread t2 = new Thread(() -> {

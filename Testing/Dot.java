@@ -15,6 +15,7 @@ public class Dot{
     //create instance variables you need
     private int content=0;
     private int group=-1;
+    public int id=-1;
     public boolean isConnected=false;
     private int numberOfColouredConnections=0;
     //firstly, the constructor:

@@ -8,11 +8,13 @@ package Algorithms;
  * Author:
  * Cavid Karca
  */
+import java.io.*;
+import java.nio.charset.Charset;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.Random;
 import java.util.ArrayList;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
 
 import Testing.*;
@@ -23,7 +25,17 @@ public int v;
         u=pU;
         v=pV;
     }
+    public boolean isEqual(int u ,int v){
+        if(this.u==u && this.v==v){
+            return true;
+        }
+        if(this.u==v && this.v==u){
+            return true;
+        }
+        return false;
+    }
 }
+
 public class Generator{
 
     private static Generator generator = new Generator();
@@ -47,7 +59,12 @@ public class Generator{
         ArrayList list = Generate(vertices,edges);
         System.out.println(filename +" created, vertices: "+vertices+" edges: "+list.size());
         fileomat(filename, vertices, list);
-    } 
+    }
+    public Graph GenerateGraphDensity(int vertices,double density){
+        double edges = ((density/100)*(vertices*(vertices-1)))/2;
+        System.out.println(edges);
+        return this.GenerateGraph(vertices,(int)edges);
+    }
     public Graph GenerateGraph(int vertices,int edges){
         ArrayList list1 = Generate(vertices, edges);
         ArrayList<Dot> list = new ArrayList<Dot>();
@@ -124,6 +141,50 @@ public class Generator{
             System.out.println("can't write file");
             ex.fillInStackTrace();
             return;
+        }
+    }
+
+    public void generateGephiFile(Graph graph, String name) {
+        ArrayList<Dot> list = graph.getList();
+        StringBuilder builder = new StringBuilder();
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        LocalDate localDate = LocalDate.now();
+        builder.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+        builder.append("<gexf xmlns=\"http://www.gexf.net/1.2draft\" version=\"1.2\">\n");
+        builder.append("    <meta lastmodifieddate=\""+dtf.format(localDate)+"\">\n");
+        builder.append("        <description>"+name+" file</description>\n");
+        builder.append("    </meta>\n");
+        builder.append("    <graph mode=\"static\" defaultedgetype=\"directed\">\n");
+        builder.append("        <nodes>\n");
+        for (int i=0;i<list.size();i++){
+            list.get(i).id=i;
+            builder.append("            <node id=\""+i+"\" label=\""+i+"\" />\n");
+        }
+        builder.append("        </nodes>\n");
+        builder.append("        <edges>\n");
+        int id=0;
+        for (int i=0;i<list.size();i++){
+            Dot dot = list.get(i);
+            ArrayList<Dot> l = dot.giveList();
+            for(int x=0;x<l.size();x++){
+                builder.append("            <edge id=\""+id+"\" source=\""+dot.id+"\" target=\""+l.get(x).id+"\" />\n");
+                id++;
+            }
+            dot.killMe();
+        }
+        builder.append("        </edges>\n");
+        builder.append("    </graph>\n");
+        builder.append("</gexf>\n");
+        try {
+            File file = new File("C:\\Users\\cavid\\Dropbox\\Private\\Phase_3\\src\\Graphs2\\Gephi\\"+name+".gexf");
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            fileOutputStream.write(builder.toString().getBytes(Charset.forName("UTF-8")));
+            fileOutputStream.flush();
+        }catch (Exception e){
+
         }
     }
 }
