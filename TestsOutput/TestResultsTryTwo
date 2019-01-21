@@ -1,13 +1,14 @@
 Test results for the set of graphs of the second phase
 With cleaner, on a macbook
 
-When it has been running for one minute:
+When it has been running for about ten minutes:
 
 -------------------
 graph1.txt
 Density: 17.91044776119403 percent
 NEW BEST UPPER BOUND = 8
 NEW BEST LOWER BOUND = 3
+CHROMATIC NUMBER = 5
 -------------------
 -------------------
 graph2.txt
