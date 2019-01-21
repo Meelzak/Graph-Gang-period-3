@@ -18,6 +18,7 @@ public class Dot{
     public int id=-1;
     public boolean isConnected=false;
     private int numberOfColouredConnections=0;
+    private boolean seen = false;
     //firstly, the constructor:
     public Dot(){
         //A class representing a single vertice of a graph
@@ -55,5 +56,14 @@ public class Dot{
     }
     public void resetColouredConnections() {
     	numberOfColouredConnections = 0;
+    }
+    public void haveSeen() {
+    	seen = true;
+    }
+    public void resetSeen() {
+    	seen = false;
+    }
+    public boolean getSeen() {
+    	return seen;
     }
 }
