@@ -92,6 +92,14 @@ NEW BEST UPPER BOUND = 8
 NEW BEST LOWER BOUND = 3
 -------------------
 -------------------
+graph13.txt
+Density: 100.0 percent
+NEW BEST UPPER BOUND = 31
+NEW BEST LOWER BOUND = 31
+CHROMATIC NUMBER = 31
+graph13.txt  time: 8
+-------------------
+-------------------
 graph14.txt
 Density: 9.240506329113925 percent
 NEW BEST UPPER BOUND = 6
