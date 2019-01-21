@@ -23,6 +23,7 @@ public class Test {
         NewGreedy greedy = new NewGreedy();
         BiPart bi = new BiPart();
         IsConnected connected = new IsConnected();
+        Connected connectedTwo = new Connected();
         Cleaner cleaner = new Cleaner();
         CleanerAndDevider cleanerAndDevider = new CleanerAndDevider();
 
@@ -66,6 +67,10 @@ public class Test {
             System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
             System.out.println(" Is Connected: "+connect);
 
+            start1 = System.currentTimeMillis();
+            boolean connectTwo = connectedTwo.isConnected(g);
+            System.out.print(graphName+"  "+"time: " + (System.currentTimeMillis() - start1));
+            System.out.println( " Is Connected: "+ connectTwo);
 
             start1 = System.currentTimeMillis();
             cleaner.cleanUp(g);
