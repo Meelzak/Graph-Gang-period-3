@@ -1,0 +1,193 @@
+circle and wheel detection
+cleaner and divider used
+Time limit: 10 minutes
+Calculations done on intel i5-6200u
+conclusion 6, 8 and 12 contain a wheel
+but chromatic number 8 is WRONG
+but only after cleaning solved
+-------------------
+g1.txt
+g1.txt  CleaningAndDeviding Time: 2
+g1.txt  time: 0   No circle detected.
+g1.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g10.txt
+g10.txt  CleaningAndDeviding Time: 0
+g10.txt  time: 0   No circle detected.
+g10.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g11.txt
+g11.txt  CleaningAndDeviding Time: 0
+g11.txt  time: 0   No circle detected.
+g11.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g12.txt
+g12.txt  CleaningAndDeviding Time: 2
+g12.txt  time: 0   Chromatic Number: 2
+g12.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g13.txt
+g13.txt  CleaningAndDeviding Time: 0
+g13.txt  time: 0   No circle detected.
+g13.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g14.txt
+g14.txt  CleaningAndDeviding Time: 2
+g14.txt  time: 0   No circle detected.
+g14.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g15.txt
+g15.txt  CleaningAndDeviding Time: 1
+g15.txt  time: 0   No circle detected.
+g15.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g16.txt
+g16.txt  CleaningAndDeviding Time: 0
+g16.txt  time: 0   No circle detected.
+g16.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g17.txt
+g17.txt  CleaningAndDeviding Time: 0
+g17.txt  time: 0   No circle detected.
+g17.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g18.txt
+contains subgraph
+g18.txt  CleaningAndDeviding Time: 1
+g18.txt  time: 0   No circle detected.
+g18.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g19.txt
+g19.txt  CleaningAndDeviding Time: 1
+g19.txt  time: 0   No circle detected.
+g19.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g2.txt
+g2.txt  CleaningAndDeviding Time: 0
+g2.txt  time: 0   No circle detected.
+g2.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g20.txt
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+contains subgraph
+g20.txt  CleaningAndDeviding Time: 6
+g20.txt  time: 0   No circle detected.
+g20.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g3.txt
+contains subgraph
+g3.txt  CleaningAndDeviding Time: 0
+g3.txt  time: 0   No circle detected.
+g3.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g4.txt
+g4.txt  CleaningAndDeviding Time: 1
+g4.txt  time: 0   No circle detected.
+g4.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g5.txt
+g5.txt  CleaningAndDeviding Time: 22
+-------------------
+-------------------
+g6.txt
+contains subgraph
+g6.txt  CleaningAndDeviding Time: 1
+g6.txt  time: 0   Chromatic Number: 3
+g6.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g7.txt
+g7.txt  CleaningAndDeviding Time: 0
+g7.txt  time: 0   No circle detected.
+g7.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g8.txt
+g8.txt  CleaningAndDeviding Time: 2
+g8.txt  time: 0   Chromatic Number: 2 WRONG
+g8.txt  time: 0   No wheel detected.
+-------------------
+-------------------
+g9.txt
+g9.txt  CleaningAndDeviding Time: 1
+g9.txt  time: 0   No circle detected.
+g9.txt  time: 0   No wheel detected.
+-------------------
+
+Process finished with exit code 0
