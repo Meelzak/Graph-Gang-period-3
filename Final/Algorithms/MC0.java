@@ -2,7 +2,7 @@ package Algorithms;
 import java.util.ArrayList;
 import java.util.ArrayList;
 import java.util.Stack;
-
+//An improved version of Fahle's maximum clique algorithm
 public class MC0{
 
     ArrayList<Dot> list;
@@ -11,6 +11,7 @@ public class MC0{
     public MC0(){
         maxList = new ArrayList<>();
     }
+    //calculates the size of the maximum clique
     public int search(Graph g){
         list = g.getList();
         ArrayList<Dot> C = new ArrayList<>();
@@ -18,8 +19,11 @@ public class MC0{
         g.gReset();
         return maxSize;
     }
+    //list is the set that contains the vertices that still need to be checked
+    //C contains the current clique
     public void expand(ArrayList<Dot> C, ArrayList<Dot> list){
         for (int i=list.size()-1;i>=0;i--){
+            //returns if the amount of remaining vertices is smaller than the maximum clique
             if (C.size()+list.size()<=maxSize) {
                 return;
             }
@@ -28,16 +32,20 @@ public class MC0{
             ArrayList<Dot> newList = new ArrayList();
             for (int j =0;j<=i;j++){
                 Dot w = list.get(j);
+                //adds the vertex to newlist when it's adjacent the current vertex
                 if (v.giveList().contains(w)){
                     newList.add(w);
                 }
             }
+            //saves the clique is it's bigger than current maximum
             if (newList.isEmpty()&&C.size()>maxSize){
                 maxSize = C.size();
             }
+            //if there are still vertices left to check
             if(!newList.isEmpty()){
                 expand(C,newList);
             }
+            //removes the vertex that's been checked
             C.remove(C.size()-1);
             list.remove(i);
         }
